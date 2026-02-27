@@ -20,10 +20,18 @@ Navigate to and ensure you are in the directory containing the file docker-compo
 docker compose up --build
 ```
 The backend will start first exposing the APIs, followed by the frontend. No need to run them separately.
+Give it about four minutes to conclude it build and deployment.
+If successful, you should an equivalent of what appears below:
+
+```bash
+django-backend  | [2026-02-27 12:12:09 +0000] [10] [INFO] Starting gunicorn 23.0.0
+django-backend  | [2026-02-27 12:12:09 +0000] [10] [INFO] Listening at: http://0.0.0.0:8000 (10)
+django-backend  | [2026-02-27 12:12:09 +0000] [10] [INFO] Using worker: sync
+django-backend  | [2026-02-27 12:12:09 +0000] [11] [INFO] Booting worker with pid: 11
+```
 
 ### 3️⃣ Access the application
 Open your browser and go to: http://localhost:3300/
-
 
 ### Features of the application
 - List all tasks in a professional table view.
