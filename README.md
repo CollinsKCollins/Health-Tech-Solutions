@@ -2,9 +2,9 @@
 A full-stack task management application built with Django (backend) and React + TypeScript (frontend). This system allows users to create, view, edit, delete, and track the status of tasks via a clean, professional UI.
 
 ### Assumptions
-For ease of running this application and because of ease in deployed the requirement and assumption is that Docker and Docker Compose is already installed.
+For ease of running this application and because of ease in deployment the requirement and assumption is that Docker and Docker Compose is already installed.
 
-With this requirement met No additional setup is needed; the database and server are handled automatically by Docker.
+With this requirement met, no additional setup is needed; the database and server are handled automatically by Docker.
 
 ### Deployment
 This project is fully containerized with Docker, so it only needs to be deployed once. Both the backend and frontend are automatically set up using Docker Compose.
@@ -13,12 +13,13 @@ This project is fully containerized with Docker, so it only needs to be deployed
 
 ### 1️⃣ Clone the Repository
 
-Ensure you are in the directory containing the file docker-compose.yml
+Navigate to and ensure you are in the directory containing the file docker-compose.yml 
+
 ### 2️⃣ Build and run the application:
 ```bash
 docker compose up --build
 ```
-The backend will start first, followed by the frontend. No need to run them separately.
+The backend will start first exposing the APIs, followed by the frontend. No need to run them separately.
 
 ### 3️⃣ Access the application
 Open your browser and go to: http://localhost:3300/
